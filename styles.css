@@ -1,0 +1,92 @@
+:root {
+  --localnav-height: 52px;
+  --localnav-large-min-width: 1024px;
+  --localnav-medium-max-width: 1023px;
+  --localnav-medium-min-width: 768px;
+  --localnav-small-max-width: 767px;
+  --localnav-small-min-width: 320px;
+  /* color */
+  --black-dark: #262626;
+  --black-light: #1d1d1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  text-align: left;
+  font-size: 17px;
+  /* line-height: 1.4; */
+  /* letter-spacing: 0.22em; */
+  background-color: #fff;
+  color: var(--black-light);
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section_header {
+  font-size: 3rem;
+  padding: 10% 2% 5%;
+}
+
+/* navbar */
+.navbar {
+  background-color: #e6e5d0;
+  width: 15rem;
+  height: 20rem;
+  font-size: 2rem;
+}
+
+/* home */
+
+#home {
+  background-color: #fdd4c8;
+}
+.main_header {
+  font-size: 3rem;
+  width: 60rem;
+  background-color: #fae7d2;
+}
+
+/* about */
+#about {
+  background-color: #e3c6b3;
+}
+
+/* projects */
+#projects {
+  background-color: #fae8d3;
+}
+/* skills */
+#skills {
+  background-color: #e3d2b3;
+}
+/* contact */
+#contact {
+  background-color: #fdefc8;
+}
+/* footer */
+#footer {
+  background-color: #e3dcb3;
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
