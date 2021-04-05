@@ -5,35 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/042b6c38b1.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="styles.css" />
 
     <title>Stella Lee | Portfolio</title>
   </head>
   <body>
-      <!--home-->
-    <section id="home">
+    <div class="body_container">
+
+      <!-- logo & social icons-->
+      <p class="logo">JE.STELLA</p>
+
+      <div class="social-icons">
+        <a href="https://linkedin.com/jestella" class="social-icon fab fa-linkedin-in" target="_blank"></a>
+        <a href="https://github.com" class="social-icon fab fa-github" target="_blank"></a>
+        <a href="mailto:je.stella.lee@gmail.com" class="social-icon fas fa-envelope" target="_blank"></a>
+      </div>
+
+        <!--home-->
+      <section id="home">
       <nav class="navbar">
         <ul class=>
           <li><a class="nav_link" href="#about">about</a></li>
-          <li><a class="nav_link" href="#project">project</a></li>
+          <li><a class="nav_link" href="#projects">projects</a></li>
           <li><a class="nav_link" href="#skills">skills</a></li>
           <li><a class="nav_link" href="#contact">contact</a></li>
         </ul>
       </nav>
-
       <!--main-->
       <div class="main">
           <div class="main_header">
-              <p>I'm Stella Lee.<br />A self-taught, interactive, frontend developer
-          based in Toronto.</p>
+              <p>I'm Stella Lee.<br />A self-taught, interactive, frontend developer<br>based in Toronto.</p>
           </div> 
       </div>
     </section>
 
        <!--about-->
     <section id="about">
-        <div class="section_header about_header">Hi</div>
-
+        <div class="section_header about_header">about</div>
+        <p>Hello! I have diverse background in marketing, translation, events, and hospitality. I spent many years to find what I am really passionate about, until I started learning how to code since 2019. Python was my first programming language, but I have figured out I enjoy building different type of websites a lot. I love working with people, learning new skills, and challenging myself.</p>
     </section>
 
        <!--projects-->
@@ -52,8 +69,8 @@
     </section>
 
        <!--footer-->
-    <footer></footer>
-
+    <footer><p>© Stella Lee 2021</p></footer>
+  </div>
     <script src="app.js"></script>
   </body>
 </html>
