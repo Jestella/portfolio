@@ -139,7 +139,15 @@ section {
 /* about */
 
 /* projects */
+.projects_container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.project {
+  width: 35rem;
+  border: 1px solid lightsteelblue;
+}
 /* skills */
 
 /* contact */
