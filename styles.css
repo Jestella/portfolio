@@ -45,7 +45,12 @@ a {
 
 .section_header {
   font-size: 3rem;
-  padding: 5% 2% 5%;
+  padding: 5% 0;
+}
+
+.section_sub_header {
+  font-size: 1.8rem;
+  padding: 3% 0;
 }
 
 .body_container {
@@ -128,7 +133,8 @@ section {
 
 .main {
   flex: 3;
-  padding: 20% 10%;
+  width: 100%;
+  padding: 20% 5%;
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(255, 229, 168, 1) 0%,
@@ -140,16 +146,23 @@ section {
 
 /* projects */
 .projects_container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project {
-  width: 35rem;
   border: 1px solid lightsteelblue;
+}
+
+.project_img {
+  width: 35rem;
 }
 /* skills */
 
+.skill_content {
+  padding: 2% 0;
+  display: flex;
+}
 /* contact */
 
 /* footer */
