@@ -67,20 +67,19 @@ section {
 /* logo & social icons */
 
 .logo {
-  position: absolute;
-  top: 12px;
-  left: 43px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  position: fixed;
+  left: 0.3rem;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
 }
 
 .social-icons {
   width: 2rem;
   z-index: 1;
   position: fixed;
-  top: 46%;
-  right: 5px;
+  top: 44%;
+  right: 0.5rem;
 }
 
 .social-icon {
