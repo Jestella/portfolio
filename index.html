@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,13 @@
 
     <title>Stella Lee | Portfolio</title>
   </head>
-  <body>
-
+<body>
+  <div class="loading_page">
+<header>
           <nav>
             <ul class="nav">
-              <li class="nav_title nav_left"> <a href="#">JE.</a></li>
-              <li class="nav_title nav_right">STELLA LEE</li>
+              <li class="nav_item nav_left"> <a href="#">JE.</a></li>
+              <li class="nav_item nav_right">STELLA LEE</li>
             </ul>
         
 
@@ -33,11 +34,23 @@
       </ul>
       -->
         </nav>
-  
+</header>
 
         <!--home-->
       <section id="home">
   
+
+      <!--responsive image-->
+      <div class="image_container hue-shift">
+        <i class="fas fa-code-branch responsive_icon"></i>
+        <i class="fas fa-wrench responsive_icon"></i>
+        <i class="fas fa-cog responsive_icon"></i>
+        <i class="fas fa-code responsive_icon"></i>
+     
+  
+      </div>
+
+
       <!--main-->
       <div class="main">
           <div class="main_left">
@@ -45,23 +58,30 @@
           </div> 
           <div class="main_right">
             <h1 class="main_text">Stella Lee,<br>a front-end web developer<br>based in Toronto.</h1>
-            <h1 class="main_text main_sub main_sub1">She loves everything</h1>
-            <h1 class="main_text main_sub main_sub2">that has to do with</h1>
-             <h1 class="main_text main_sub main_sub3">art, design & technologies.</h1>
+            <div class="main_sub"></div>
+            <h1 class="main_text  main_sub1">She loves everything</h1>
+            <h1 class="main_text main_sub2">that has to do with</h1>
+             <h1 class="main_text main_sub3">art, design & technology.</h1>
         </div> 
      
       </div>
+   
     </section>
 
        <!--about-->
     <section id="about">
         <h2 class="section_header about_header">about</h2>
         <div class="about_content section_content">
-        <p>Hello! I am an independent and self-taught web developer based in Toronto. I started learning web development in May 2020 after spending months thinking about my next career, and I think I picked the right one for me since I am really enjoying this learning process.</p>
-        <p>
-          I remember spending lots of time on making powerpoints with some cool animation and effects for my presentation back in college. This might sound strange, but I feel like building websites is an advanced version of making PowerPoint pages: The design, layouts, colour, fonts, and adding interactive function. </p>
-
-        <p>I can't wait to try out new technologies and techniques that are related to modern web development.</p>
+          <p>Hello! I am an independent and self-taught web developer based in Toronto.</p>
+          <h4>WHEN? & WHY?</h4>
+          <p>
+             I started learning web development in May 2020 after spending months thinking about my next career, because what I studied, Event and Media Production, was no longer sound attractive to me and the pandemic hit. I always wanted to know how to code and build my personal website from scratch, and also thought 2020 might be a year for me to work hard on what I want to do for the rest of my life.</p>
+          <h4>HOW?</h4>
+          <p>20% Udemy | 20% MDN | 10% Youtube | 50% Stackoverflow</p>
+          <h4>My Strength</h4>
+          <p>
+            responsibility & diverse background, grit, a team player 
+            </p>
       </div>
     </section>
 
@@ -73,6 +93,7 @@
           <li><i class="fab fa-react"></i><p>React</p></li>
           <li><i class="fab fa-node-js"></i><p>Node.JS</p></li>
           <li><i class="fab fa-js"></i><p>JavaScript</p></li>
+          <li><i class="fab fa-bootstrap"></i><p>Bootstrap</p></li>
           <li><i class="fab fa-css3-alt"></i><p>CSS</p></li>
           <li><i class="fab fa-html5"></i><p>HTML</p></li>
         </ul>
@@ -96,10 +117,12 @@
             <div class="project">
               <h4 class="project_title">A Word A Day - 2021</h4>
               <img src="./images/thankyou.jpg" class="project_img">
-              <p class="project_description">project description</p>
-              <p class="project_tech_list">Technologies used: <i class="fab fa-html5"></i> <i class="fab fa-js"></i></p>
               <div class="project_links"> <button class="live_demo"><a href="">livedemo</a></button>
                 <button class="github_link"><a href="jestella.github.com">github</a></button>
+              <p class="project_description1">project description</p>
+              <p class="project_tech_list">Technologies used: <i class="fab fa-html5"></i> <i class="fab fa-js"></i></p>
+              <p class="project_description2">What I learned: </p>
+              
               </div>
             </div>
           </li>
@@ -111,15 +134,15 @@
         <div class="apps_container">
           <div class="section_content">
           <h3 class="section_sub_header">Things I have learned</h3>
-          <h5>These are the projects I have built with the online courses I took</h5>
+          <h5>I have learned and experienced these things so far.</h5>
         
-
           <ul>
-            <li class="app app1">map</li>
-            <li class="app app2">todolist</li>
-            <li class="app app3">bank account</li>
-            <li class="app app4">blog</li>
-            <li class="app app5">youtube</li>
+            <li class="app app1">Mongoose</li>
+            <li class="app app2">JQuery</li>
+            <li class="app app3">Using APIs</li>
+            <li class="app app4"></li>
+            <li class="app app5">Git, Github</li>
+            <li class="app app5">Bootstrap</li>
           </ul>
         </div>
       </div>
@@ -152,5 +175,6 @@
       <div class="section_content"><p>© Stella Lee 2021</p></div></footer>
 
     <script src="app.js"></script>
+    </div>
   </body>
 </html>

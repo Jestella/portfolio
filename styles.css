@@ -14,12 +14,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-text-size-adjust: 100%;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  -webkit-text-size-adjust: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -70,6 +70,7 @@ section {
   padding: 3%;
 }
 
+/* nav */
 .nav {
   position: fixed;
   display: flex;
@@ -84,7 +85,8 @@ section {
 /* home */
 
 #home {
-  background-color: #fff;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 .main {
@@ -94,7 +96,7 @@ section {
 }
 
 .main_left {
-  padding: 16% 0;
+  padding: 14% 0 0;
   width: 35%;
   text-align: right;
 }
@@ -105,7 +107,7 @@ section {
 }
 
 .main_right {
-  padding: 15% 0 15% 3%;
+  padding: 14% 0 13% 3%;
   width: 65%;
 }
 
@@ -121,11 +123,11 @@ section {
   color: rgb(199, 198, 198);
 }
 
-
-
 /* about */
 
-
+#about h4 {
+  padding: 1.5rem 0 0.5rem;
+}
 
 #about p {
   padding: 1% 0;
@@ -155,16 +157,11 @@ section {
 }
 
 /* projects */
-.projects_container {
-  background-color: rgb(160, 185, 108);
-}
-
-
 
 .project {
   border: 1px solid black;
   display: grid;
-  grid-template-rows: 1fr  3fr 2fr 1fr 1fr ;
+  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
 }
 
 .project_img {
@@ -177,12 +174,12 @@ section {
 .contact_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .contact_left {
   background-color: greenyellow;
   text-align: center;
+  padding: 20%;
 }
 
 .contact_right {
@@ -190,7 +187,7 @@ section {
 }
 
 .social_icons {
-  width: 8rem;
+  text-align: center;
 }
 
 .social_icon {
@@ -208,41 +205,161 @@ section {
 /* footer */
 footer {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
+/* responsive icons */
 
-@media only screen and (max-width: 860px) {
+.loading_page {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hue-shift {
+  animation: hue-shift 5s infinite alternate;
+}
+
+.image_container {
+  text-align: center;
+  position: relative;
+}
+
+.responsive_icon {
+  position: absolute;
+  font-size: 2.5rem;
+}
+
+.fa-code-branch {
+  top: 6rem;
+  left: 2rem;
+  animation: rotate 2s infinite alternate;
+  background: -moz-linear-gradient(top, pink 0%, red 100%);
+  background: -webkit-linear-gradient(top, pink 0%, red 100%);
+  background: linear-gradient(to bottom, pink 0%, red 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-wrench {
+  top: 9rem;
+  right: 3rem;
+  animation: move-down 2.5s infinite alternate;
+  background: -moz-linear-gradient(top, violet 0%, silver 100%);
+  background: -webkit-linear-gradient(top, violet 0%, silver 100%);
+  background: linear-gradient(to bottom, violet 0%, silver 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-cog {
+  top: 20rem;
+  right: 9rem;
+  animation: move-down 3s infinite alternate;
+  background: -moz-linear-gradient(top, skyblue 0%, yellowgreen 100%);
+  background: -webkit-linear-gradient(top, skyblue 0%, yellowgreen 100%);
+  background: linear-gradient(to bottom, skyblue 0%, yellowgreen 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-code {
+  top: 13rem;
+  right: 14rem;
+  animation: move-down 2s infinite alternate;
+  background: -moz-linear-gradient(top, yellow 0%, orange 100%);
+  background: -webkit-linear-gradient(top, yellow 0%, orange 100%);
+  background: linear-gradient(to bottom, yellow 0%, orange 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* animation */
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes hue-shift {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(365deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #home {
+    height: 975px;
+  }
   .profile_img {
-    opacity: 0.6;
+    width: 15rem;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 25px;
+    border-bottom: 0.1px solid lightgray;
+  }
 
-@media screen and (max-width: 660px) {
+  #home {
+    height: 80%;
+  }
+
   .profile_img {
-    opacity: 0.2;
+    opacity: 0.85;
     width: 10rem;
+    border-radius: 50%;
     position: absolute;
-    top: 20%;
-    left: 10%;
-    transform: rotate(-10deg);
+    top: 185px;
+    left: 5%;
   }
 
   .main_left {
     width: 0%;
   }
 
-
   .main_right {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     width: 100%;
-    text-align: center;
-    padding: 25% 0;
-   }
-
-   .main_sub {
-     color:gray;
-   }
+    padding: 300px 0 100px;
+    line-height: 1;
   }
+
+  .main_sub {
+    padding-top: 3%;
+  }
+}
