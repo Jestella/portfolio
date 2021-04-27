@@ -33,6 +33,7 @@ body {
   background-color: #fff;
   color: var(--black-light);
   display: block;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 body ::selection {
@@ -46,6 +47,7 @@ p {
 
 li {
   list-style-type: none;
+  line-height: 1.4;
 }
 
 a {
@@ -53,9 +55,19 @@ a {
   color: inherit;
 }
 
+a:hover,
+button:hover {
+  background-image: linear-gradient(
+    68.2deg,
+    rgba(255, 202, 88, 1) 0%,
+    rgba(139, 73, 255, 1) 100.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 section {
   padding: 25px 25px 100px 25px;
-  border-bottom: 0.1px solid lightgray;
 }
 
 .section_header {
@@ -83,11 +95,6 @@ section {
 }
 
 /* home */
-
-#home {
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-}
 
 .main {
   display: flex;
@@ -125,17 +132,31 @@ section {
 
 /* about */
 
+#about {
+  color: #fff;
+  background-color: #262626;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#about h1 {
+  font-size: 2.5rem;
+}
+
 #about h4 {
-  padding: 1.5rem 0 0.5rem;
+  padding: 3rem 0 0.5rem;
 }
 
 #about p {
   padding: 1% 0;
-  font-size: 1.1rem;
   line-height: 1.4;
 }
 
 /* skills */
+
+#skills {
+  background-color: #fff;
+}
+
 .skill_icons {
   display: flex;
   justify-content: space-between;
@@ -149,7 +170,7 @@ section {
 }
 
 .skill_icons li i {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .skill_icons p {
@@ -158,32 +179,88 @@ section {
 
 /* projects */
 
+#projects {
+  background-color: #262626;
+  color: lightgray;
+}
+
+.projects_header,
+.projects_sub_header {
+  color: #fff;
+}
+
+.projects_sub_header {
+  font-style: italic;
+}
+
 .project {
-  border: 1px solid black;
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem 0 6rem;
+}
+
+.project_right {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .project_img {
-  width: 10rem;
+  max-width: 26rem;
 }
-/* skills */
+
+.project_btns,
+.project_sub_title,
+.project_tech_list,
+.project_description1,
+.project_description2 {
+  margin-bottom: 0.9rem;
+}
+
+.project_tech_list i {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: #fbe6c2;
+}
+
+.ejs_logo {
+  width: 1.5rem;
+  height: 1rem;
+  margin-right: 0.9rem;
+  padding: 3px;
+  border-radius: 1px;
+  background-color: #fbe6c2;
+}
+
+.project_btn {
+  background-color: inherit;
+  color: #ffe268;
+  border: 1px solid #ffe268;
+  padding: 5px 7px;
+  font-size: 0.9rem;
+}
+
+.project_description2 h4 {
+  margin-bottom: 1rem;
+}
+
+.project_description2 li {
+  list-style: inside;
+}
+
+/* additional skills */
+.additional_skills {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 6rem 0.5rem 6rem 0;
+  font-size: 0.9rem;
+}
 
 /* contact */
 
-.contact_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact_left {
-  background-color: greenyellow;
+.contact {
   text-align: center;
-  padding: 20%;
-}
-
-.contact_right {
-  background-color: #000;
 }
 
 .social_icons {
@@ -191,11 +268,13 @@ section {
 }
 
 .social_icon {
-  font-size: 0.9rem;
-  padding: 3px;
-  color: black;
+  font-size: 1.3rem;
+  padding: 1.4rem;
   border-radius: 50%;
-  margin: 2%;
+  margin: 5%;
+
+  background-color: #262626;
+  color: #fff;
 }
 
 .social_icon:hover {
@@ -324,8 +403,20 @@ footer {
   #home {
     height: 975px;
   }
+
   .profile_img {
     width: 15rem;
+  }
+
+  .project {
+    display: inline-block;
+  }
+  .project_right {
+    margin-top: 1rem;
+  }
+
+  .projects_sub_header {
+    margin-bottom: 2rem;
   }
 }
 
@@ -333,6 +424,10 @@ footer {
   section {
     padding: 25px;
     border-bottom: 0.1px solid lightgray;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 
   #home {
