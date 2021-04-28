@@ -142,7 +142,7 @@ section {
   font-size: 2.5rem;
 }
 
-#about h4 {
+#about h3 {
   padding: 3rem 0 0.5rem;
 }
 
@@ -196,7 +196,7 @@ section {
 .project {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 1rem 0 6rem;
+  margin: 1rem 0 10%;
 }
 
 .project_right {
@@ -205,7 +205,7 @@ section {
 }
 
 .project_img {
-  max-width: 28rem;
+  max-width: 29rem;
 }
 
 .project_btns,
@@ -253,26 +253,21 @@ section {
   display: flex;
   justify-content: space-between;
   max-width: 800px;
-  margin: 6rem 0.5rem 6rem 0;
+  margin: 5% 0.5rem 5% 0;
   font-size: 0.9rem;
 }
 
 /* contact */
 
-.contact {
-  text-align: center;
-}
-
-.social_icons {
+#contact {
   text-align: center;
 }
 
 .social_icon {
   font-size: 1.3rem;
-  padding: 1.4rem;
+  padding: 1.2rem;
   border-radius: 50%;
   margin: 5%;
-
   background-color: #262626;
   color: #fff;
 }
@@ -422,7 +417,11 @@ footer {
 
 @media screen and (max-width: 767px) {
   section {
-    padding: 100px 10px;
+    padding: 80px 10px;
+  }
+
+  nav li {
+    font-size: 1.3rem;
   }
 
   p,
@@ -449,7 +448,9 @@ footer {
   .main_right {
     font-size: 1.8rem;
     width: 100%;
-    padding: 23rem 0 8rem;
+    position: absolute;
+    top: 33rem;
+    padding: 0;
     line-height: 1;
   }
 
