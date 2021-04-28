@@ -170,7 +170,7 @@ section {
 }
 
 .skill_icons li i {
-  font-size: 1.9rem;
+  font-size: 2.4rem;
 }
 
 .skill_icons p {
@@ -205,7 +205,7 @@ section {
 }
 
 .project_img {
-  max-width: 26rem;
+  max-width: 28rem;
 }
 
 .project_btns,
@@ -213,7 +213,7 @@ section {
 .project_tech_list,
 .project_description1,
 .project_description2 {
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
 }
 
 .project_tech_list i {
@@ -422,12 +422,12 @@ footer {
 
 @media screen and (max-width: 767px) {
   section {
-    padding: 25px;
-    border-bottom: 0.1px solid lightgray;
+    padding: 25px 10px;
   }
 
-  p {
-    font-size: 0.9rem;
+  p,
+  li {
+    font-size: 1.1rem;
   }
 
   #home {
@@ -435,12 +435,15 @@ footer {
   }
 
   .profile_img {
-    opacity: 0.85;
-    width: 10rem;
+    width: 11rem;
     border-radius: 50%;
     position: absolute;
-    top: 185px;
-    left: 5%;
+    top: 12rem;
+    left: 10px;
+  }
+
+  .project_img {
+    width: 100%;
   }
 
   .main_left {
@@ -450,7 +453,7 @@ footer {
   .main_right {
     font-size: 1.7rem;
     width: 100%;
-    padding: 300px 0 100px;
+    padding: 20rem 0 5rem;
     line-height: 1;
   }
 
