@@ -64,6 +64,8 @@ button:hover {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 section {
@@ -416,13 +418,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  section {
+  /* section {
     padding: 80px 10px;
-  }
-
-  #home {
-    padding: 80px 10px 10px;
-  }
+  } */
 
   nav li {
     font-size: 1.3rem;
