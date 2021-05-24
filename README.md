@@ -1,2 +1,1 @@
 # portfolio
-stella-lee.com
