@@ -450,6 +450,7 @@ footer {
   } */
   #home {
     height: 100vh;
+    width: 100%;
   }
 
   nav li {
@@ -466,7 +467,7 @@ footer {
     border-radius: 50%;
     position: absolute;
     top: 15rem;
-    left: 10px;
+    left: 1.5rem;
   }
 
   .project_img {
@@ -481,7 +482,7 @@ footer {
     font-size: 1.8rem;
     width: 100%;
     position: absolute;
-    top: 28rem;
+    top: 30rem;
     padding: 0;
     line-height: 1;
   }
