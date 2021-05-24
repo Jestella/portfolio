@@ -90,6 +90,7 @@ section {
 
 .section_content {
   padding: 3%;
+  margin: auto 5%;
 }
 
 /* nav */
@@ -97,11 +98,20 @@ section {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   width: 100%;
   padding: 25px;
   color: #302f2f;
+}
+
+.nav_item {
+  text-shadow: 0.5px 0.5px lightgray, -0.5px 0.5px lightgray,
+    0.5px -0.5px lightgray, -0.5px -0.5px lightgray;
+}
+
+.nav_item:hover {
+  text-shadow: none;
 }
 
 /* home */
@@ -159,10 +169,24 @@ section {
 #about p {
   padding: 1% 0;
   line-height: 1.4;
+  font-size: 1.2rem;
 }
 
 #about button {
   margin-top: 4rem;
+}
+
+.underline {
+  background-image: linear-gradient(90deg, #cfdac8 0%, #8ad7c1 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.27s ease-in;
+}
+
+.underline:hover {
+  background-size: 100% 88%;
+  color: #000;
 }
 
 /* skills */
@@ -397,12 +421,13 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-  #home {
-    height: 975px;
-  }
-
   .profile_img {
     width: 15rem;
+  }
+
+  .section_content {
+    margin: auto 0;
+    padding: 3rem 0;
   }
 
   .project {
@@ -410,6 +435,7 @@ footer {
   }
   .project_right {
     margin-top: 1rem;
+    margin-left: 0.5rem;
   }
 
   .projects_sub_header {
@@ -421,6 +447,9 @@ footer {
   /* section {
     padding: 80px 10px;
   } */
+  #home {
+    height: 975px;
+  }
 
   nav li {
     font-size: 1.3rem;
