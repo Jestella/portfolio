@@ -434,10 +434,10 @@ footer {
   .project {
     display: inline-block;
   }
-  .project_right {
+  /* .project_right {
     margin-top: 1rem;
     margin-left: 0.5rem;
-  }
+  } */
 
   .projects_sub_header {
     margin-bottom: 2rem;
@@ -467,7 +467,7 @@ footer {
     border-radius: 50%;
     position: absolute;
     top: 15rem;
-    left: 1.5rem;
+    left: auto;
   }
 
   .project_img {
