@@ -434,10 +434,11 @@ footer {
   .project {
     display: inline-block;
   }
-  /* .project_right {
+
+  .project_right {
     margin-top: 1rem;
     margin-left: 0.5rem;
-  } */
+  }
 
   .projects_sub_header {
     margin-bottom: 2rem;
