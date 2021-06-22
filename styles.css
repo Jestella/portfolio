@@ -132,7 +132,6 @@ section {
 
 .profile_img {
   width: 19rem;
-  opacity: 0.85;
 }
 
 .main_right {
@@ -268,6 +267,15 @@ section {
   margin-right: 0.9rem;
   padding: 3px;
   border-radius: 1px;
+  background-color: #fbe6c2;
+}
+
+.redux_logo {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 1rem;
+  padding: 2px;
+
   background-color: #fbe6c2;
 }
 
