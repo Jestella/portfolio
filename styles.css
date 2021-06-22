@@ -132,6 +132,7 @@ section {
 
 .profile_img {
   width: 19rem;
+  opacity: 0.96;
 }
 
 .main_right {
@@ -240,6 +241,7 @@ section {
 .project_right {
   margin-left: 1.5rem;
   font-size: 0.95rem;
+  font-weight: 300;
 }
 
 .project_img {
