@@ -160,6 +160,19 @@ section {
   background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
 }
 
+.about_hello_container {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 5rem;
+}
+
+.memoji {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.5rem;
+  animation: scale-up 2s infinite alternate;
+}
+
 #about h1 {
   font-size: 2.5rem;
   padding: 0 0 2rem;
@@ -428,6 +441,15 @@ footer {
   }
   to {
     filter: hue-rotate(365deg);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(1.7);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
