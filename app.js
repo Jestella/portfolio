@@ -1,6 +1,6 @@
 'use strict';
 
-// Revealing project
+// Revealing project - using The Intersection Observer API
 
 const allProjects = document.querySelectorAll('.project');
 
