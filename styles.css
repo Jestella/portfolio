@@ -167,10 +167,10 @@ section {
 }
 
 .memoji {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   margin-left: 0.5rem;
-  animation: scale-up 2s infinite alternate;
+  /* animation: scale-up 2s infinite alternate; */
 }
 
 #about h1 {
