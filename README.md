@@ -1,3 +1,3 @@
 # portfolio version1
 
-#### Live Demo : https://jestella.github.io/portfolio/
+#### Live Demo : https://jestella.github.io/portfolio_1/
